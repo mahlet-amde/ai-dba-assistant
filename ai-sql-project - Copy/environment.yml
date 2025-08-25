@@ -1,0 +1,16 @@
+# Save updates with:
+# conda env update --file environment.yml --prune
+
+name: ai-sql-project
+channels:
+  - defaults
+dependencies:
+  - python=3.11
+  - pip
+  - pip:
+    - strands-agents
+    - strands-agents[ollama]
+    - strands-agents[openai]
+    - psycopg2
+    - termcolor
+    - aiohttp
